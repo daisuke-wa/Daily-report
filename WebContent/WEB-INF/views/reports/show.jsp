@@ -36,6 +36,10 @@
                             </td>
                         </tr>
                             <!-- ↓「いいね」追加 -->
+                        <tr>
+                            <th>いいね数</th>
+                            <td>${report.like_count}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <!-- ↓「いいね」追加 -->
