@@ -51,6 +51,18 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    // いいね数のプロパティを追加
+    @Column(name = "like_count", nullable = false)
+    private Integer like_count;
+
+    public Integer getLike_count() {
+        return like_count;
+    }
+
+    public void setLike_count(Integer like_count) {
+        this.like_count = like_count;
+    }
+
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
@@ -60,6 +72,7 @@ public class Report {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
 
     public Integer getId() {
         return id;

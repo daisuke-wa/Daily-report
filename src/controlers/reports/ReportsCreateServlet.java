@@ -51,6 +51,9 @@ public class ReportsCreateServlet extends HttpServlet {
             }
             r.setReport_date(report_date);
 
+            //↓「いいね」追加
+            r.setLike_count(0);
+
             r.setTitle(request.getParameter("title"));
             r.setContent(request.getParameter("content"));
 
